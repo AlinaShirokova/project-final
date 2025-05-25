@@ -324,3 +324,7 @@ values (6, 1, '2023-05-15 09:05:10', null, 'Data', null, 3, 'epic', 'in_progress
        (5, 118, '2023-05-16 11:10:10', null, 'UI tab of tasks', null, null, null, null, 'high'),
        (11, 118, '2023-05-16 12:30:10', null, 'UI tab of tasks', null, 2, null, null, null);
 
+insert into ACTIVITY (author_id, task_id, updated, comment, title, description, estimate, type_code, status_code, priority_code)
+values  (7, 1, current_timestamp + interval '1 hour', null, null, null, null, null, 'in_progress', null),
+        (7, 1, current_timestamp + interval '2 hour', null, null, null, null, null, 'ready_for_review', null),
+        (7, 1, current_timestamp + interval '3 hour', null, null, null, null, null, 'done', null);
